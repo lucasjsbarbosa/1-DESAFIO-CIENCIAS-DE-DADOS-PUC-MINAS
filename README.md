@@ -91,7 +91,7 @@ Essas descobertas enfatizam a necessidade de políticas públicas que visem a re
 
 ## Machine Learning 
 
-As discrepâncias significativas nos índices de pobreza entre as diferentes regiões tornaram evidente a necessidade de aplicar técnicas avançadas de machine learning para uma análise mais aprofundada. O objetivo principal é desenvolver um modelo preditivo capaz de determinar se um indivíduo pertence ao grupo étnico 'preto ou pardo' ou 'branco', exclusivamente com base nos indicadores do Índice de Pobreza Multidimensional (IPM), incidência, intensidade e em outras variáveis relevantes, como o Índice de Desenvolvimento Humano Municipal (IDHM), Índice de Vulnerabilidade Social (IVS), Índice de Bem-Estar Urbano (IBEU) e a renda média. Esta abordagem visa não apenas aprofundar a compreensão das disparidades socioeconômicas, mas também aprimorar a capacidade de previsão e identificação de fatores subjacentes às diferenças étnicas nas condições de bem-estar, permitindo uma análise mais holística das complexas interações entre essas variáveis.
+As discrepâncias significativas nos índices de pobreza entre as diferentes regiões tornaram evidente a necessidade de aplicar técnicas avançadas de machine learning para uma análise mais aprofundada. O objetivo principal é desenvolver um modelo preditivo capaz de determinar de forma binária se um indivíduo pertence a um grupo étnico específico, onde (1) representa a categoria 'preto ou pardo' e (0) a categoria 'branco'. É importante salientar que esta abordagem trata as categorias étnicas de forma não ordinal, ou seja, não impõe uma ordem específica entre elas, mas visa identificar as diferenças étnicas com base exclusivamente nos indicadores do Índice de Pobreza Multidimensional (IPM), incidência, intensidade e em outras variáveis relevantes, como o Índice de Desenvolvimento Humano Municipal (IDHM), Índice de Vulnerabilidade Social (IVS), Índice de Bem-Estar Urbano (IBEU) e a renda média. Esta abordagem visa não apenas aprofundar a compreensão das disparidades socioeconômicas, mas também aprimorar a capacidade de previsão e identificação de fatores subjacentes às diferenças étnicas nas condições de bem-estar, permitindo uma análise mais holística das complexas interações entre essas variáveis.
 
 ### Árvore de Decisão 
 
@@ -133,10 +133,18 @@ Para uma visualização prática do modelo foi criada um DataFrame chamado "X_ne
 
 Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como "1" para "preta ou parda" e "0" para "branca", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
 
-|   Índice   | incidência | qtd_pes_E1 | qtd_pes_E2 | qtd_pes_E3 | qtd_pes_S1 | qtd_pes_S2 | qtd_pes_S3 | qtd_pes_S4 | qtd_pes_T1 | qtd_pes_T2 | ... | qtd_pes_P1 | qtd_pes_P2 | qtd_pes_P3 | qtd_pes_P4 | intensidade |    IPM    | num_idhm | num_ivs | num_ibeu | num_renda |
-|:---------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:| ... |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-------:|:-------:|:-------:|:-------:|
-|   6785    |   0.598478  |   0.005574  |   0.009047  |   0.011864  |   0.000000  |   0.016905  |   0.010180  |   0.037248  |   0.012578  |   0.002891  | ... |   0.001507  |   0.004468  |   0.013200  |   0.015129  |   0.738597  | 0.460271 | 0.333333 | 0.667147 | 0.560158 | 0.104537 |
-|   7586    |   0.223892  |   0.086413  |   0.131075  |   0.135824  |   0.053985  |   0.058966  |   0.115893  |   0.140461  |   0.093029  |   0.148285  | ... |   0.014442  |   0.097988  |   0.152819  |   0.140660  |   0.693010  | 0.161560 | 0.621622 | 0.380403 | 0.672584 | 0.232756 |
-|   2195    |   0.679095  |   0.007895  |   0.011134  |   0.013673  |   0.020280  |   0.023076  |   0.013329  |   0.065434  |   0.019654  |   0.003338  | ... |   0.023693  |   0.009788  |   0.019899  |   0.032404  |   0.779424  | 0.551139 | 0.367117 | 0.646974 | 0.627219 | 0.065707 |
+Nessas 3 linhas de índice [6785, 7586, 2195] em outro DataFrame com uma coluna de raça de forma binária temos [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'] agora vamos testar o modelo na prática usando fazendo uma previsão no DataFrame "X_new" que não contém essa coluna:
 
+model.predict(X_new)
 
+Temos como resultado uma array([1., 1., 1.]) o modelo errou o primeiro resultado e desta forma iremos usar uma outra abordagem para tentar encontrar um resultado melhor.
+
+### Regressão Logística 
+
+A regressão logística é uma técnica essencial no campo da modelagem estatística e aprendizado de máquina, frequentemente empregada para resolver problemas de classificação. Sua aplicação fundamental envolve a previsão da probabilidade de um evento ou categoria pertencer a uma das duas classes distintas, sendo comumente utilizada para prever situações binárias, como "sim/não" ou "positivo/negativo". Por meio de uma função logística, as variáveis independentes são combinadas de forma a mapear as previsões no intervalo de 0 a 1, representando a probabilidade da ocorrência do evento.
+
+No contexto em questão, a regressão logística desempenha um papel crucial ao permitir a previsão da raça de indivíduos com base em indicadores socioeconômicos e de desenvolvimento humano, criando uma abordagem quantitativa para analisar as disparidades étnicas e raciais. Essa aplicação possibilita uma compreensão mais profunda das complexas interações entre fatores socioeconômicos e pertencimento étnico, auxiliando na formulação de políticas públicas e em tomadas de decisão embasadas.
+
+Ao capacitar a análise das variáveis independentes e sua relação com a raça, a regressão logística oferece insights valiosos para abordar desigualdades sociais e econômicas, promovendo uma visão mais abrangente da dinâmica dessas disparidades e proporcionando subsídios para medidas que buscam a equidade e justiça.
+
+Assim como na árvore de decião 
