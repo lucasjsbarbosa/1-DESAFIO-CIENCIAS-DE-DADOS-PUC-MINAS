@@ -174,7 +174,7 @@ Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, o qual
 
 ```model.predict(X_new)```
 
-Desta vez, com um modelo mais apurado notamos o resultado é um array([0., 1., 1.]) que prevê corretamente os resultados esperados. 
+Desta vez, com um modelo mais apurado tem-se um resultado que é um array([0., 1., 1.]) que é exatamente o resultado esperado e equivalo a ['Branca', 'Preta ou Parda', 'Preta ou Parda'] como era esperado.
 
 No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
 
