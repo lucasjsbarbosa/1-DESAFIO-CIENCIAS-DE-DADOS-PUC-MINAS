@@ -1,7 +1,7 @@
 # Radiografia das Desigualdades Raciais no Brasil: Um Exame Multidimensional dos Determinantes Sociais e Econômicos
 A análise dos indicadores sociais e econômicos é fundamental para entender as disparidades sociais existentes no Brasil e em muitos outros países. A relação entre esses indicadores e a raça das pessoas é um tema de grande relevância, pois revela como fatores como educação, saúde, trabalho e padrão de vida podem afetar de forma desigual grupos raciais específicos, destacando a persistência das desigualdades raciais.
 
-## Análise Generalizada do Índice de Pobreza Multidmensional no Brasil
+## Análise Generalizada do Índice de Pobreza Multidmensional (IPM) no Brasil
 Afim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
 
 ### Dimensão: Educação
