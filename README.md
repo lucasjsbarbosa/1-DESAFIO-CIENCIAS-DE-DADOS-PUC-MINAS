@@ -79,8 +79,49 @@ Dada a disponibilidade abrangente de informações, torna-se imperativo proceder
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/f59f6f2b-81d0-4087-9218-1a4befaa67c8">
 </div>
 
+Pode-se observar uma significativa discrepância nas médias do Índice de Pobreza Multidimensional (IPM) entre as regiões geográficas. Para uma análise mais aprofundada, é relevante investigar a predominância étnica em cada região.
 
+<div align="center">
+  <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/8ff78c49-ce6c-41db-b803-eee9f61dcdc8">
+</div>
 
+Um aspecto interessante a se destacar é que, no Norte e no Nordeste, as duas regiões com as médias mais elevadas de IPM, também se concentram as maiores proporções de pessoas de raça "negra ou parda". Esse fato sublinha a importância de considerar a interseção entre raça e desenvolvimento social, destacando como a equidade racial é uma questão fundamental para a melhoria das condições de vida nessas regiões.
 
+Essas descobertas enfatizam a necessidade de políticas públicas que visem a redução das desigualdades regionais e raciais, promovendo um desenvolvimento mais inclusivo e equitativo em todo o país. O entendimento dessas tendências no IPM por região é crucial para orientar esforços no sentido de garantir uma sociedade mais justa e igualitária para todos os brasileiros.
 
+## Machine Learning 
+
+As discrepâncias significativas nos índices de pobreza entre as diferentes regiões tornaram evidente a necessidade de aplicar técnicas avançadas de machine learning para uma análise mais aprofundada. O objetivo principal é desenvolver um modelo preditivo capaz de determinar se um indivíduo pertence ao grupo étnico 'preto ou pardo' ou 'branco', exclusivamente com base nos indicadores do Índice de Pobreza Multidimensional (IPM), incidência, intensidade e em outras variáveis relevantes, como o Índice de Desenvolvimento Humano Municipal (IDHM), Índice de Vulnerabilidade Social (IVS), Índice de Bem-Estar Urbano (IBEU) e a renda média. Esta abordagem visa não apenas aprofundar a compreensão das disparidades socioeconômicas, mas também aprimorar a capacidade de previsão e identificação de fatores subjacentes às diferenças étnicas nas condições de bem-estar, permitindo uma análise mais holística das complexas interações entre essas variáveis.
+
+### Árvore de Decisão 
+
+As árvores de decisão são uma poderosa técnica de aprendizado de máquina e análise de dados que oferecem insights valiosos e auxiliam na tomada de decisões com base em informações disponíveis. Essa abordagem hierárquica utiliza critérios de divisão para classificar ou prever dados, proporcionando uma estrutura clara e facilmente interpretável
+
+Após a normalização e o treinamento dos dados, uma árvore de decisão foi concebida
+
+<div align="center">
+  <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/530238bd-b4d3-4d2d-ae6d-fc3dd78a0c2f">
+</div>
+
+Torna se necessário a verificação e consolidação na prática do modelo, abaixo as tabelas representam métricas de avaliação do desempenho de um modelo de árvore de decisão, especificamente em uma tarefa de classificação. Isso inclui precisão (quão precisas são as previsões), recall (quão bem o modelo identifica casos positivos), F1-score (uma média ponderada da precisão e recall), suporte (o número de amostras em cada classe) e acurácia (a proporção de previsões corretas em relação ao total de previsões). Essas métricas são fundamentais para avaliar a eficácia do modelo de árvore de decisão em diferentes cenários de treinamento e teste.
+
+#### Reporte Teste
+
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0.0          | 0.69      | 0.65   | 0.67     | 3298    |
+| 1.0          | 0.68      | 0.72   | 0.70     | 3380    |
+| accuracy     |           |        | 0.68     | 6678    |
+| macro avg    | 0.68      | 0.68   | 0.68     | 6678    |
+| weighted avg | 0.68      | 0.68   | 0.68     | 6678    |
+
+#### Reporte Completo
+
+|              | precision | recall | f1-score | support |
+|--------------|-----------|--------|----------|---------|
+| 0.0          | 0.71      | 0.66   | 0.69     | 11130   |
+| 1.0          | 0.68      | 0.73   | 0.71     | 11130   |
+| accuracy     |           |        | 0.70     | 22260   |
+| macro avg    | 0.70      | 0.70   | 0.70     | 22260   |
+| weighted avg | 0.70      | 0.70   | 0.70     | 22260   |
 
