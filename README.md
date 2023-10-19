@@ -63,14 +63,15 @@ Neste ponto da análise, já podemos observar evidências sólidas das desiguald
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/e84f131b-35f6-4c39-b464-4f65bd6771ef" alt="Descrição da Imagem">
 </div>
 
-Como  são muitos dados em uma único gráfico, ressalta-se a importância de coloca-los em uma tabela para melhor visão e compreenão
+Como  são muitos dados em uma único gráfico, ressalta-se a importância de coloca-los em uma tabela para melhor visão e compreensão. Nota se que estão em notação decimal e representam a porcentagem total de pessoas no devido indicador em relação ao grupo:
 
-| raca           | sexo       | qtd_pes_E1 | qtd_pes_E2 | qtd_pes_E3 | qtd_pes_S1 | qtd_pes_S2 | qtd_pes_S3 | qtd_pes_S4 | qtd_pes_T1 | qtd_pes_T2 | qtd_pes_T3 | qtd_pes_P1 | qtd_pes_P2 | qtd_pes_P3 | qtd_pes_P4 |
-|----------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|
-| Branca         | Feminino   | 0.024566   | 0.045657   | 0.144675   | 0.000322   | 0.093607   | 0.140431   | 0.078364   | 0.017413   | 0.028785   | 0.106584   | 0.048810   | 0.083435   | 0.143893   | 0.043458   |
-| Branca         | Masculino  | 0.024637   | 0.045640   | 0.144479   | 0.000289   | 0.097069   | 0.140690   | 0.082090   | 0.018543   | 0.026280   | 0.107311   | 0.049642   | 0.078922   | 0.143149   | 0.041258   |
-| Negra ou Parda | Feminino   | 0.025621   | 0.056533   | 0.135868   | 0.000414   | 0.083250   | 0.127149   | 0.077945   | 0.014963   | 0.030239   | 0.099113   | 0.044752   | 0.098104   | 0.148435   | 0.057614   |
-| Negra ou Parda | Masculino  | 0.026114   | 0.057554   | 0.135756   | 0.000366   | 0.086213   | 0.126213   | 0.081800   | 0.016155   | 0.027931   | 0.099236   | 0.046277   | 0.094151   | 0.147202   | 0.055033   |
+| Grupo               | qtd_pes_E1 | qtd_pes_E2 | qtd_pes_E3 | qtd_pes_S1 | qtd_pes_S2 | qtd_pes_S3 | qtd_pes_S4 | qtd_pes_T1 | qtd_pes_T2 | qtd_pes_T3 | qtd_pes_P1 | qtd_pes_P2 | qtd_pes_P3 | qtd_pes_P4 |
+|---------------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|
+| Branca - Feminino   | 0.024566   | 0.045657   | 0.144675   | 0.000322   | 0.093607   | 0.140431   | 0.078364   | 0.017413   | 0.028785   | 0.106584   | 0.048810   | 0.083435   | 0.143893   | 0.043458   |
+| Branca - Masculino  | 0.024637   | 0.045640   | 0.144479   | 0.000289   | 0.097069   | 0.140690   | 0.082090   | 0.018543   | 0.026280   | 0.107311   | 0.049642   | 0.078922   | 0.143149   | 0.041258   |
+| Negra ou Parda - Feminino | 0.025621   | 0.056533   | 0.135868   | 0.000414   | 0.083250   | 0.127149   | 0.077945   | 0.014963   | 0.030239   | 0.099113   | 0.044752   | 0.098104   | 0.148435   | 0.057614   |
+| Negra ou Parda - Masculino | 0.026114   | 0.057554   | 0.135756   | 0.000366   | 0.086213   | 0.126213   | 0.081800   | 0.016155   | 0.027931   | 0.099236   | 0.046277   | 0.094151   | 0.147202   | 0.055033   |
+
 
 Dada a disponibilidade abrangente de informações, torna-se imperativo proceder à análise das distribuições desses dados com base nas regiões geográficas, a fim de aprofundar nossa compreensão sobre a dinâmica subjacente. A consideração da segmentação geográfica é crucial para identificar variações regionais nos indicadores previamente discutidos, bem como para contextualizar as disparidades socioeconômicas. Esse enfoque possibilita uma abordagem mais holística na avaliação do Índice de Pobreza Multidimensional (IPM) e dos fatores que contribuem para as desigualdades, fornecendo insights valiosos que podem orientar estratégias de políticas públicas mais eficazes e direcionadas para a promoção da equidade em diferentes áreas geográficas.
 
