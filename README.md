@@ -148,7 +148,6 @@ Ao capacitar a análise das variáveis independentes e sua relação com a raça
 
 Assim como na árvore de decião aqui também foram testados 30% dos dados, pelos mesmo motivos e assim ficaram os reportes: 
 
-
 #### Reporte de Teste
 
 |           | Precision | Recall | F1-Score | Support |
@@ -171,11 +170,11 @@ Assim como na árvore de decião aqui também foram testados 30% dos dados, pelo
 
 A análise dos resultados revelou melhorias substanciais tanto no reporte completo quanto no reporte de teste. Este aprimoramento representa um desenvolvimento significativo na capacidade do modelo de regressão logística em prever com precisão a raça dos indivíduos com base nos indicadores socioeconômicos e de desenvolvimento humano. 
 
-Aqui nesse caso usaremos o mesmo DataFrame usado anteriormente "X_new" que não possui uma coluna de raça como falado anteriormente, onde o modelo agora de regressão logística irá prever os resultados que em outro DataFrame que está completo com a coluna de raças está da seguinte forma como dito anteriormente [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'].
+Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, o qual não inclui uma coluna de raça. O objetivo é utilizar um modelo de regressão logística para fazer previsões com base nesse DataFrame em relação aos resultados contidos em outro DataFrame que incorpora a coluna de raça. Esta última coluna de raça é representada pelos valores [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda'] para as linhas de índice [6785, 7586, 2195], conforme discutido anteriormente.
 
 ```model.predict(X_new)```
 
-Desta vez, com um modelo mais apurado notamos o resultado é um array([0., 1., 1.]) que prevê corretamente os resultado 
+Desta vez, com um modelo mais apurado notamos o resultado é um array([0., 1., 1.]) que prevê corretamente os resultados esperados. 
 
 No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
 
