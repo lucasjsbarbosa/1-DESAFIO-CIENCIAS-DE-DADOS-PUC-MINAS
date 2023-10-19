@@ -42,7 +42,7 @@ No contexto observado, é evidente que a maioria dos dados apresenta uma frequê
 Nesse cenário, evidencia-se a importância da elaboração de quatro histogramas distintos e uma tabela com estatísticas, cada um referente a um dos quatro grupos demográficos estipulados, a saber: (1) Branca - Masculino, (2) Branca - Feminino, (3) Preta ou Parda - Masculino e (4) Preta ou Parda - Feminino. A finalidade dessa abordagem reside na busca por insights e conclusões mais robustas e esclarecedoras a respeito das características analisadas, dado que a segmentação dos dados por raça e sexo é fundamental para identificar eventuais diferenças e tendências específicas associadas a cada grupo. Portanto, a plotagem dos quatro histogramas e tabela estatística se apresentam como recursos valioso no processo de análise de dados, possibilitando uma compreensão mais aprofundada e precisa dos padrões subjacentes a essas demografias.
 
 <div align="center">
-  <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/f66c7861-f0d6-42d4-906a-605e00f741ee" alt="Descrição da Imagem">
+  <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/43eedec4-a871-43be-bf86-6c7e9230932a" alt="Descrição da Imagem">
 </div>
 
 <div style="text-align:center; font-size:14px;">
