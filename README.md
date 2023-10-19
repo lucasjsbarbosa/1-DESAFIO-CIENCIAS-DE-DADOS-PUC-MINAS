@@ -134,7 +134,7 @@ Neste contexto, a tarefa de classificação é de natureza binária, onde a raç
 
 Nessas 3 linhas de índice [6785, 7586, 2195] em outro DataFrame com uma coluna de raça de forma binária temos [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'] agora vamos testar o modelo na prática usando fazendo uma previsão no DataFrame "X_new" que não contém essa coluna:
 
-model.predict(X_new)
+```model.predict(X_new)```
 
 Temos como resultado uma array([1., 1., 1.]) o modelo errou o primeiro resultado e desta forma iremos usar uma outra abordagem para tentar encontrar um resultado melhor.
 
@@ -173,7 +173,7 @@ A análise dos resultados revelou melhorias substanciais tanto no reporte comple
 
 Aqui nesse caso usaremos o mesmo DataFrame usado anteriormente "X_new" que não possui uma coluna de raça como falado anteriormente, onde o modelo agora de regressão logística irá prever os resultados que em outro DataFrame que está completo com a coluna de raças está da seguinte forma como dito anteriormente [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'].
 
-model.predict(X_new)
+```model.predict(X_new)```
 
 Desta vez, com um modelo mais apurado notamos o resultado é um array([0., 1., 1.]) que prevê corretamente os resultado 
 
