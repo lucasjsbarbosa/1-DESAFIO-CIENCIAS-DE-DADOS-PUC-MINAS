@@ -125,3 +125,18 @@ Torna se necessário a verificação e consolidação na prática do modelo, aba
 | macro avg    | 0.70      | 0.70   | 0.70     | 22260   |
 | weighted avg | 0.70      | 0.70   | 0.70     | 22260   |
 
+É fundamental notar que, com o intuito de garantir a validade dos resultados, apenas 30% dos dados totais foram empregados no processo de treinamento do modelo. Essa prática visa a assegurar que uma porção substancial dos dados seja reservada para a fase de teste e validação, permitindo uma avaliação mais precisa da eficácia da árvore de decisão. A divisão de dados em treinamento e teste é uma estratégia comum no campo de aprendizado de máquina, que ajuda a prevenir possíveis vieses e superestimações do desempenho do modelo. 
+
+É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão
+
+Para uma visualização prática do modelo foi criada um DataFrame chamado "X_new", no qual se encontram 3 linhas de índice [6785, 7586, 2195], cada uma com informações detalhadas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
+
+Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como "1" para "preta ou parda" e "0" para "branca", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
+
+|   Índice   | incidência | qtd_pes_E1 | qtd_pes_E2 | qtd_pes_E3 | qtd_pes_S1 | qtd_pes_S2 | qtd_pes_S3 | qtd_pes_S4 | qtd_pes_T1 | qtd_pes_T2 | ... | qtd_pes_P1 | qtd_pes_P2 | qtd_pes_P3 | qtd_pes_P4 | intensidade |    IPM    | num_idhm | num_ivs | num_ibeu | num_renda |
+|:---------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:| ... |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-------:|:-------:|:-------:|:-------:|
+|   6785    |   0.598478  |   0.005574  |   0.009047  |   0.011864  |   0.000000  |   0.016905  |   0.010180  |   0.037248  |   0.012578  |   0.002891  | ... |   0.001507  |   0.004468  |   0.013200  |   0.015129  |   0.738597  | 0.460271 | 0.333333 | 0.667147 | 0.560158 | 0.104537 |
+|   7586    |   0.223892  |   0.086413  |   0.131075  |   0.135824  |   0.053985  |   0.058966  |   0.115893  |   0.140461  |   0.093029  |   0.148285  | ... |   0.014442  |   0.097988  |   0.152819  |   0.140660  |   0.693010  | 0.161560 | 0.621622 | 0.380403 | 0.672584 | 0.232756 |
+|   2195    |   0.679095  |   0.007895  |   0.011134  |   0.013673  |   0.020280  |   0.023076  |   0.013329  |   0.065434  |   0.019654  |   0.003338  | ... |   0.023693  |   0.009788  |   0.019899  |   0.032404  |   0.779424  | 0.551139 | 0.367117 | 0.646974 | 0.627219 | 0.065707 |
+
+
