@@ -30,17 +30,31 @@ Afim de fazer uma análise generalizad do IPM deve-se levar em consideração os
 - (P3) Consumo: Domicílio sem máquina de lavar roupa (Peso: 6,25)
 - (P4) Renda Domiciliar: Domicílio com renda domiciliar per capita inferior a linha de pobreza – U$$5,50 por dia ou R$93,27 por mês (Peso: 6,25)
 
-Com o intuito de fazer a análise de forma progressiva inicialmente é poltada um histograma
+
+Com a finalidade de conduzir a análise de maneira gradual e sistemática, é inicialmente aplicada uma abordagem centrada na construção de um histograma. Essa abordagem se revela relevante no contexto da pesquisa, visto que a utilização de um histograma desempenha um papel fundamental no processo de análise exploratória de dados, permitindo a visualização e interpretação da distribuição de variáveis, fatores críticos para a compreensão aprofundada dos padrões e tendências subjacentes nos conjuntos de dados em estudo.
 
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/46fef24b-01ea-48f7-964b-a5c036cf2228" alt="Descrição da Imagem">
 </div>
 
 
+No contexto observado, é evidente que a maioria dos dados apresenta uma frequência consideravelmente mais alta antes de atingirem o valor de IPM igual a 20. No entanto, a partir desse ponto, a interpretação dos resultados se torna mais desafiadora e menos conclusiva. Essa observação sugere um padrão inicialmente identificável na distribuição dos dados, mas a complexidade e a variedade dos dados se tornam mais evidentes após o ponto de IPM 20, o que torna a análise subsequente potencialmente mais complexa e sujeita a interpretações diversas.
+
+Nesse cenário, evidencia-se a importância da elaboração de quatro histogramas distintos e uma tabela com estatística, cada um referente a um dos quatro grupos demográficos estipulados, a saber: (1) Branca - Masculino, (2) Branca - Feminino, (3) Preta ou Parda - Masculino e (4) Preta ou Parda - Feminino. A finalidade dessa abordagem reside na busca por insights e conclusões mais robustas e esclarecedoras a respeito das características analisadas, dado que a segmentação dos dados por raça e sexo é fundamental para identificar eventuais diferenças e tendências específicas associadas a cada grupo. Portanto, a plotagem dos quatro histogramas e tabela estatística se apresentam como recursos valioso no processo de análise de dados, possibilitando uma compreensão mais aprofundada e precisa dos padrões subjacentes a essas demografias.
+
+<div align="center">
+  <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/f66c7861-f0d6-42d4-906a-605e00f741ee" alt="Descrição da Imagem">
+</div>
+
+<div style="text-align:center; font-size:14px;">
 
 
-
-
+| Grupo Demográfico         | Média | Mediana | Desvio Padrão | Mínimo | Máximo | Q1   | Q3   | IQR   |
+|:--------------------------|:-----:|:-------:|:-------------:|:------:|:------:|:----:|:----:|:----:|
+| Branca Masculino         | 15.49 | 14.84   | 9.56          | 0.14   | 55.34  | 7.41 | 22.04| 14.64 |
+| Branca Feminino          | 14.40 | 13.37   | 9.26          | 0.07   | 55.45  | 6.63 | 20.53| 13.90 |
+| Preta ou Parda Masculino  | 18.89 | 18.71   | 10.27         | 0.00   | 56.87  | 10.52| 26.28| 15.75 |
+| Preta ou Parda Feminino   | 17.88 | 17.46   | 9.96          | 0.00   | 55.89  | 9.71 | 24.83| 15.11 |
 
 
 
