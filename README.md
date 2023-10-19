@@ -147,4 +147,66 @@ No contexto em questão, a regressão logística desempenha um papel crucial ao 
 
 Ao capacitar a análise das variáveis independentes e sua relação com a raça, a regressão logística oferece insights valiosos para abordar desigualdades sociais e econômicas, promovendo uma visão mais abrangente da dinâmica dessas disparidades e proporcionando subsídios para medidas que buscam a equidade e justiça.
 
-Assim como na árvore de decião 
+Assim como na árvore de decião aqui também foram testados 30% dos dados, pelos mesmo motivos e assim ficaram os reportes: 
+
+
+#### Reporte de Teste
+
+|           | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| 0.0       | 0.72      | 0.78   | 0.75     | 3298    |
+| 1.0       | 0.77      | 0.70   | 0.73     | 3380    |
+| Accuracy  |           |        | 0.74     | 6678    |
+| Macro Avg | 0.74      | 0.74   | 0.74     | 6678    |
+| Weighted Avg | 0.74   | 0.74   | 0.74     | 6678    |
+
+#### Relatório Completo
+
+|           | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| 0.0       | 0.73      | 0.78   | 0.75     | 11130   |
+| 1.0       | 0.76      | 0.70   | 0.73     | 11130   |
+| Accuracy  |           |        | 0.74     | 22260   |
+| Macro Avg | 0.74      | 0.74   | 0.74     | 22260   |
+| Weighted Avg | 0.74   | 0.74   | 0.74     | 22260   |
+
+A análise dos resultados revelou melhorias substanciais tanto no reporte completo quanto no reporte de teste. Este aprimoramento representa um desenvolvimento significativo na capacidade do modelo de regressão logística em prever com precisão a raça dos indivíduos com base nos indicadores socioeconômicos e de desenvolvimento humano. 
+
+Aqui nesse caso usaremos o mesmo DataFrame usado anteriormente "X_new" que não possui uma coluna de raça como falado anteriormente, onde o modelo agora de regressão logística irá prever os resultados que em outro DataFrame que está completo com a coluna de raças está da seguinte forma como dito anteriormente [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'].
+
+model.predict(X_new)
+
+Desta vez, com um modelo mais apurado notamos o resultado é um array([0., 1., 1.]) que prevê corretamente os resultado 
+
+No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
