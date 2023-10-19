@@ -133,11 +133,11 @@ Para uma visualização prática do modelo foi criada um DataFrame chamado "X_ne
 
 Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como "1" para "preta ou parda" e "0" para "branca", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
 
-Nessas 3 linhas de índice [6785, 7586, 2195] em outro DataFrame com uma coluna de raça de forma binária temos [ 0, 1, 1] ou [ 'Branca', 'Preta ou Parda', 'Preta ou Parda'] agora vamos testar o modelo na prática usando fazendo uma previsão no DataFrame "X_new" que não contém essa coluna:
+Nessas 3 linhas de índice [6785, 7586, 2195] no outro DataFrame chamado 'dfML', a coluna de raça está presente de forma binária, onde há [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda']. Agora, o modelo será testado na prática, fazendo previsões no DataFrame 'X_new', que não contém essa coluna.:
 
 ```model.predict(X_new)```
 
-Temos como resultado uma array([1., 1., 1.]) o modelo errou o primeiro resultado e desta forma iremos usar uma outra abordagem para tentar encontrar um resultado melhor.
+Obteve-se como resultado uma matriz ([1, 1, 1]), observando-se que o modelo apresentou um erro no primeiro resultado, mas acertou nas duas previsões subsequentes. Como medida corretiva, uma abordagem alternativa será adotada na busca de uma previsão mais precisa..
 
 ### Regressão Logística 
 
@@ -175,7 +175,7 @@ Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, o qual
 
 ```model.predict(X_new)```
 
-Desta vez, com um modelo mais apurado tem-se um resultado que é um array([0., 1., 1.]) que é exatamente o resultado esperado e equivalo a ['Branca', 'Preta ou Parda', 'Preta ou Parda'] como era esperado.
+Desta vez, com um modelo mais apurado tem-se um resultado que é uma matriz([0, 1, 1]) que é exatamente o resultado esperado e equivale a ['Branca', 'Preta ou Parda', 'Preta ou Parda'] como era esperado.
 
 No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
 
