@@ -1,8 +1,8 @@
 # Radiografia das Desigualdades Raciais no Brasil: Um Exame Multidimensional dos Determinantes Sociais e Econômicos
-A análise dos indicadores sociais e econômicos é fundamental para entender as disparidades sociais existentes no Brasil e em muitos outros países. A relação entre esses indicadores e a raça das pessoas é um tema de grande relevância, pois revela como fatores como educação, saúde, trabalho e padrão de vida podem afetar de forma desigual grupos raciais específicos, destacando a persistência das desigualdades raciais
+A análise dos indicadores sociais e econômicos é fundamental para entender as disparidades sociais existentes no Brasil e em muitos outros países. A relação entre esses indicadores e a raça das pessoas é um tema de grande relevância, pois revela como fatores como educação, saúde, trabalho e padrão de vida podem afetar de forma desigual grupos raciais específicos, destacando a persistência das desigualdades raciais.
 
 ## Análise Generalizada do Índice de Pobreza Multidmensional no Brasil
-Afim de fazer uma análise generalizad do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
+Afim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
 
 ### Dimensão: Educação
 
@@ -36,7 +36,6 @@ Com a finalidade de conduzir a análise de maneira gradual e sistemática, é in
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/46fef24b-01ea-48f7-964b-a5c036cf2228" alt="Descrição da Imagem">
 </div>
-
 
 No contexto observado, é evidente que a maioria dos dados apresenta uma frequência consideravelmente mais alta antes de atingirem o valor de IPM igual a 20. No entanto, a partir desse ponto, a interpretação dos resultados se torna mais desafiadora e menos conclusiva. Essa observação sugere um padrão inicialmente identificável na distribuição dos dados, mas a complexidade e a variedade dos dados se tornam mais evidentes após o ponto de IPM 20, o que torna a análise subsequente potencialmente mais complexa e sujeita a interpretações diversas.
 
@@ -73,7 +72,7 @@ Como  são muitos dados em uma único gráfico, ressalta-se a importância de co
 | Negra ou Parda | Feminino   | 0.025621   | 0.056533   | 0.135868   | 0.000414   | 0.083250   | 0.127149   | 0.077945   | 0.014963   | 0.030239   | 0.099113   | 0.044752   | 0.098104   | 0.148435   | 0.057614   |
 | Negra ou Parda | Masculino  | 0.026114   | 0.057554   | 0.135756   | 0.000366   | 0.086213   | 0.126213   | 0.081800   | 0.016155   | 0.027931   | 0.099236   | 0.046277   | 0.094151   | 0.147202   | 0.055033   |
 
-Dada a disponibilidade abrangente de informações, torna-se imperativo proceder à análise das distribuições desses dados com base nas regiões geográficas, a fim de aprofundar nossa compreensão sobre a dinâmica subjacente. A consideração da segmentação geográfica é crucial para identificar variações regionais nos indicadores previamente discutidos, bem como para contextualizar as disparidades socioeconômicas. Esse enfoque possibilita uma abordagem mais holística na avaliação do Índice de Pobreza Multidimensional (IPM) e dos fatores que contribuem para as desigualdades, fornecendo insights valiosos que podem orientar estratégias de políticas públicas mais eficazes e direcionadas para a promoção da equidade em diferentes áreas geográficas
+Dada a disponibilidade abrangente de informações, torna-se imperativo proceder à análise das distribuições desses dados com base nas regiões geográficas, a fim de aprofundar nossa compreensão sobre a dinâmica subjacente. A consideração da segmentação geográfica é crucial para identificar variações regionais nos indicadores previamente discutidos, bem como para contextualizar as disparidades socioeconômicas. Esse enfoque possibilita uma abordagem mais holística na avaliação do Índice de Pobreza Multidimensional (IPM) e dos fatores que contribuem para as desigualdades, fornecendo insights valiosos que podem orientar estratégias de políticas públicas mais eficazes e direcionadas para a promoção da equidade em diferentes áreas geográficas.
 
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/f59f6f2b-81d0-4087-9218-1a4befaa67c8">
@@ -95,9 +94,9 @@ As discrepâncias significativas nos índices de pobreza entre as diferentes reg
 
 ### Árvore de Decisão 
 
-As árvores de decisão são uma poderosa técnica de aprendizado de máquina e análise de dados que oferecem insights valiosos e auxiliam na tomada de decisões com base em informações disponíveis. Essa abordagem hierárquica utiliza critérios de divisão para classificar ou prever dados, proporcionando uma estrutura clara e facilmente interpretável
+As árvores de decisão são uma poderosa técnica de aprendizado de máquina e análise de dados que oferecem insights valiosos e auxiliam na tomada de decisões com base em informações disponíveis. Essa abordagem hierárquica utiliza critérios de divisão para classificar ou prever dados, proporcionando uma estrutura clara e facilmente interpretável.
 
-Após a normalização e o treinamento dos dados, uma árvore de decisão foi concebida
+Após a normalização e o treinamento dos dados, uma árvore de decisão foi concebida.
 
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/530238bd-b4d3-4d2d-ae6d-fc3dd78a0c2f">
@@ -127,7 +126,7 @@ Torna se necessário a verificação e consolidação na prática do modelo, aba
 
 É fundamental notar que, com o intuito de garantir a validade dos resultados, apenas 30% dos dados totais foram empregados no processo de treinamento do modelo. Essa prática visa a assegurar que uma porção substancial dos dados seja reservada para a fase de teste e validação, permitindo uma avaliação mais precisa da eficácia da árvore de decisão. A divisão de dados em treinamento e teste é uma estratégia comum no campo de aprendizado de máquina, que ajuda a prevenir possíveis vieses e superestimações do desempenho do modelo. 
 
-É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão
+É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão.
 
 Para uma visualização prática do modelo foi criada um DataFrame chamado "X_new", no qual se encontram 3 linhas de índice [6785, 7586, 2195], cada uma com informações detalhadas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
 
