@@ -89,7 +89,7 @@ Um aspecto interessante a se destacar é que, no Norte e no Nordeste, as duas re
 
 Essas descobertas enfatizam a necessidade de políticas públicas que visem a redução das desigualdades regionais e raciais, promovendo um desenvolvimento mais inclusivo e equitativo em todo o país. O entendimento dessas tendências no IPM por região é crucial para orientar esforços no sentido de garantir uma sociedade mais justa e igualitária para todos os brasileiros.
 
-## Machine Learning 
+## Machine Learning Supervisionado 
 
 As discrepâncias significativas nos índices de pobreza entre as diferentes regiões tornaram evidente a necessidade de aplicar técnicas avançadas de machine learning para uma análise mais aprofundada. O objetivo principal é desenvolver um modelo preditivo capaz de determinar de forma binária se um indivíduo pertence a um grupo étnico específico, onde (1) representa a categoria 'preto ou pardo' e (0) a categoria 'branco'. É importante salientar que esta abordagem trata as categorias étnicas de forma não ordinal, ou seja, não impõe uma ordem específica entre elas, mas visa identificar as diferenças étnicas com base exclusivamente nos indicadores do Índice de Pobreza Multidimensional (IPM), incidência, intensidade e em outras variáveis relevantes, como o Índice de Desenvolvimento Humano Municipal (IDHM), Índice de Vulnerabilidade Social (IVS), Índice de Bem-Estar Urbano (IBEU) e a renda média. Esta abordagem visa não apenas aprofundar a compreensão das disparidades socioeconômicas, mas também aprimorar a capacidade de previsão e identificação de fatores subjacentes às diferenças étnicas nas condições de bem-estar, permitindo uma análise mais holística das complexas interações entre essas variáveis.
 
