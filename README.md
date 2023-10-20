@@ -85,7 +85,7 @@ Pode-se observar uma significativa discrepância nas médias do Índice de Pobre
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/8ff78c49-ce6c-41db-b803-eee9f61dcdc8">
 </div>
 
-Um aspecto interessante a se destacar é que, no Norte e no Nordeste, as duas regiões com as médias mais elevadas de IPM, também se concentram as maiores proporções de pessoas de raça "negra ou parda". Esse fato sublinha a importância de considerar a interseção entre raça e desenvolvimento social, destacando como a equidade racial é uma questão fundamental para a melhoria das condições de vida nessas regiões. Desta forma a partir de agora trabalharemos com dois grupos o grupo de raca "preta ou parda" e o grupo de raça "branca" sem distinção de sexo.
+Um aspecto interessante a se destacar é que, no Norte e no Nordeste, as duas regiões com as médias mais elevadas de IPM, também se concentram as maiores proporções de pessoas de raça "negra ou parda". Esse fato sublinha a importância de considerar a interseção entre raça e desenvolvimento social, destacando como a equidade racial é uma questão fundamental para a melhoria das condições de vida nessas regiões. Desta forma a partir de agora trabalharemos com dois grupos o grupo de raça "preta ou parda" e o grupo de raça "branca" sem distinção de sexo.
 
 Essas descobertas enfatizam a necessidade de políticas públicas que visem a redução das desigualdades regionais e raciais, promovendo um desenvolvimento mais inclusivo e equitativo em todo o país. O entendimento dessas tendências no IPM por região é crucial para orientar esforços no sentido de garantir uma sociedade mais justa e igualitária para todos os brasileiros.
 
@@ -129,7 +129,7 @@ Torna se necessário a verificação e consolidação na prática do modelo, aba
 
 É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão.
 
-Para uma visualização prática do modelo foi criada um DataFrame chamado "X_new", no qual se encontram 3 linhas de índice [6785, 7586, 2195], cada uma com informações detalhadas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
+Para uma visualização prática do modelo, foi criada um DataFrame chamado "X_new" no qual se encontram 3 linhas de índice [6785, 7586, 2195], cada uma com informações detalhadas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
 
 Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como "1" para "preta ou parda" e "0" para "branca", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
 
@@ -171,7 +171,7 @@ Assim como na árvore de decião aqui também foram testados 30% dos dados, pelo
 
 A análise dos resultados revelou melhorias substanciais tanto no reporte completo quanto no reporte de teste. Este aprimoramento representa um desenvolvimento significativo na capacidade do modelo de regressão logística em prever com precisão a raça dos indivíduos com base nos indicadores socioeconômicos e de desenvolvimento humano. 
 
-Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, o qual não inclui uma coluna de raça. O objetivo é utilizar um modelo de regressão logística para fazer previsões com base nesse DataFrame em relação aos resultados contidos em outro DataFrame que incorpora a coluna de raça. Esta última coluna de raça é representada pelos valores [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda'] para as linhas de índice [6785, 7586, 2195], conforme discutido anteriormente.
+Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, no qual não inclui uma coluna de raça. O objetivo é utilizar um modelo de regressão logística para fazer previsões com base nesse DataFrame em relação aos resultados contidos em outro DataFrame que incorpora a coluna de raça. Esta última coluna de raça é representada pelos valores [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda'] para as linhas de índice [6785, 7586, 2195], conforme discutido anteriormente.
 
 ```model.predict(X_new)```
 
