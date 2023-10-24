@@ -57,7 +57,7 @@ Nesse cenário, evidencia-se a importância da elaboração de quatro histograma
 
 Comparando os grupos Branca Masculino, Branca Feminino, Preta ou Parda Masculino e Preta ou Parda Feminino em relação ao Índice de Pobreza Multidimensional (IPM), observamos algumas distinções. O grupo Preta ou Parda Masculino tem a média mais alta, indicando que, em média, possui um IPM mais elevado. Por outro lado, o grupo Branca Feminino tem a média mais baixa, sugerindo um IPM mais baixo em média. A mediana segue um padrão semelhante, com o grupo Preta ou Parda Masculino tendo a mediana mais alta e o grupo Branca Feminino com a mediana mais baixa. O desvio padrão revela que o grupo Preta ou Parda Masculino tem maior variabilidade nos valores do IPM, indicando uma dispersão mais ampla dos dados. Os quartis destacam que o grupo Preta ou Parda Masculino possui valores mais altos em ambos Q1 (primeiro quartil) e Q3 (terceiro quartil). Em resumo, o grupo Preta ou Parda Masculino demonstra uma tendência a ter um IPM mais alto, com maior variação, enquanto o grupo Branca Feminino apresenta um IPM mais baixo em média e menor variabilidade.
 
-Neste ponto da análise, já podemos observar evidências sólidas das desigualdades no Índice de Pobreza Multidimensional (IPM), com ênfase na segmentação por raça. A diferenciação entre grupos demográficos, notadamente 'Branca' e 'Preta ou Parda', revela disparidades significativas em uma ampla gama de dimensões socioeconômicas. É fundamental que exista também uma plotagem de um heatmap (mapa de calor) pra cada um dos grupos para ver com qual intensidade eles se encaixam em cada indicador do IPM
+Neste ponto da análise, já podemos observar evidências sólidas das desigualdades no Índice de Pobreza Multidimensional (IPM), com ênfase na segmentação por raça. A diferenciação entre grupos demográficos, notadamente 'Branca' e 'Preta ou Parda', revela disparidades significativas em uma ampla gama de dimensões socioeconômicas. É fundamental que exista também uma plotagem de um heatmap (mapa de calor) pra cada um dos grupos para ver com qual intensidade eles se encaixam em cada indicador do IPM:
 
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/e84f131b-35f6-4c39-b464-4f65bd6771ef" alt="Descrição da Imagem">
@@ -135,11 +135,11 @@ Para uma visualização prática do modelo, foi criada um DataFrame chamado "X_n
 
 Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como "1" para "preta ou parda" e "0" para "branca", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
 
-Nessas 3 linhas de índice [6785, 7586, 2195] no outro DataFrame chamado 'dfML', a coluna de raça está presente de forma binária, onde há [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda']. Agora, o modelo será testado na prática, fazendo previsões no DataFrame 'X_new', que não contém essa coluna.:
+Nessas 3 linhas de índice [6785, 7586, 2195] no outro DataFrame chamado 'dfML', a coluna de raça está presente de forma binária, onde há [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda']. Agora, o modelo será testado na prática, fazendo previsões no DataFrame 'X_new', que não contém essa coluna:
 
 ```model.predict(X_new)```
 
-Obteve-se como resultado uma matriz ([1, 1, 1]), observando-se que o modelo apresentou um erro no primeiro resultado, mas acertou nas duas previsões subsequentes. Como medida corretiva, uma abordagem alternativa será adotada na busca de uma previsão mais precisa..
+Obteve-se como resultado uma matriz ([1, 1, 1]), observando-se que o modelo apresentou um erro no primeiro resultado, mas acertou nas duas previsões subsequentes. Como medida corretiva, uma abordagem alternativa será adotada na busca de uma previsão mais precisa.
 
 ### Regressão Logística 
 
