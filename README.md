@@ -4,7 +4,7 @@ A análise dos indicadores sociais e econômicos é fundamental para entender as
 ## Etapas do Processo:
 Na pesquisa conduzida, a linguagem Python foi empregada como a principal ferramenta de programação. Sua escolha se deveu à sua crescente popularidade e versatilidade no domínio da ciência de dados e aprendizado de máquina, possibilitando a implementação eficaz de algoritmos complexos, análise estatística avançada e a manipulação de grandes conjuntos de dados. A utilização do Python demonstrou ser um recurso fundamental no contexto da pesquisa, facilitando a análise e a interpretação dos resultados obtidos. A estruturação deste estudo evoluiu por meio da seguinte sequência de etapas:
 
-- 1 - Importação das bibliotecas necessárias.
+- 1 - Importação das bibliotecas necessárias (Pandas, Seaborn, NumPy, Matplotlib.pyplot, Scikit-Learn, Statsmodels, Statsmodelos.formula.api) e tamém a importaçao de funções específicas relacionadas a métricas e avisos.
 - 2 - Extração dos dados brutos.
 - 3 - Análise preliminar dos DataFrames para entender sua estrutura.
 - 4 - Tratamento de valores nulos, incluindo preenchimento ou remoção, conforme necessário.
@@ -14,7 +14,7 @@ Na pesquisa conduzida, a linguagem Python foi empregada como a principal ferrame
 - 8 - Divisão dos dados para treinamento (30%) e teste (70%).
 - 9 - Construção de um modelo de Árvore de Decisão.
 - 10 - Construção de um modelo de Regressão Logística.
-- 11 - Avaliação do desempenho dos modelos usando dados de teste.
+- 11 - Avaliação do desempenho dos modelos.
 
 ## Análise Generalizada do Índice de Pobreza Multidmensional (IPM) no Brasil
 Afim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
