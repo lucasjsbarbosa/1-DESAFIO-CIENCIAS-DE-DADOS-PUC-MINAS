@@ -1,6 +1,21 @@
 # Radiografia das Desigualdades Raciais no Brasil: Um Exame Multidimensional dos Determinantes Sociais e Econômicos
 A análise dos indicadores sociais e econômicos é fundamental para entender as disparidades sociais existentes no Brasil e em muitos outros países. A relação entre esses indicadores e a raça das pessoas é um tema de grande relevância, pois revela como fatores como educação, saúde, trabalho e padrão de vida podem afetar de forma desigual grupos raciais específicos, destacando a persistência das desigualdades raciais.
 
+## Etapas do Processo:
+Na pesquisa conduzida, a linguagem Python foi empregada como a principal ferramenta de programação. Sua escolha se deveu à sua crescente popularidade e versatilidade no domínio da ciência de dados e aprendizado de máquina, possibilitando a implementação eficaz de algoritmos complexos, análise estatística avançada e a manipulação de grandes conjuntos de dados. A utilização do Python demonstrou ser um recurso fundamental no contexto da pesquisa, facilitando a análise e a interpretação dos resultados obtidos. A estruturação deste estudo evoluiu por meio da seguinte sequência de etapas:
+
+- 1 - Importação das bibliotecas necessárias.
+- 2 - Extração dos dados brutos.
+- 3 - Análise preliminar dos DataFrames para entender sua estrutura.
+- 4 - Tratamento de valores nulos, incluindo preenchimento ou remoção, conforme necessário.
+- 5 - Transformação dos dados, como codificação de variáveis categóricas.
+- 6 - Análise exploratória de dados (EDA) para identificar padrões e relações.
+- 7 - Normalização dos dados para escalas comparáveis.
+- 8 - Divisão dos dados para treinamento (30%) e teste (70%).
+- 9 - Construção de um modelo de Árvore de Decisão.
+- 10 - Construção de um modelo de Regressão Logística.
+- 11 - Avaliação do desempenho dos modelos usando dados de teste.
+
 ## Análise Generalizada do Índice de Pobreza Multidmensional (IPM) no Brasil
 Afim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
 
