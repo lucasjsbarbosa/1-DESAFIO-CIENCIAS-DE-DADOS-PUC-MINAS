@@ -146,15 +146,15 @@ Torna se necessário a verificação e consolidação na prática do modelo, aba
 
 É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão.
 
-Para uma visualização prática do modelo, foi criada um DataFrame chamado "X_new" no qual se encontram 3 linhas de índice [6785, 7586, 2195], cada uma com informações detalhadas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
+Para uma visualização prática do modelo, foi criada um DataFrame chamado *'X_new'* no qual se encontram 3 linhas de índices igual a *[6785, 7586, 2195]*, cada uma com informações detalhadas em colunas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
 
 Neste contexto, a tarefa de classificação é de natureza binária, onde a raça é a variável de destino. Esta variável de destino é codificada como (1) para "*Preta ou Parda*" e "0" para "*Branca*", configurando uma classificação binária. A classificação binária refere-se a situações em que há apenas duas categorias distintas, sem ênfase em uma ordem específica entre elas.
 
-Nessas 3 linhas de índice [6785, 7586, 2195] no outro DataFrame chamado 'dfML', a coluna de raça está presente de forma binária, onde há [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda']. Agora, o modelo será testado na prática, fazendo previsões no DataFrame 'X_new', que não contém essa coluna:
+Nessas 3 linhas de índices igual a *[6785, 7586, 2195]* no outro DataFrame chamado 'dfML', a coluna de raça está presente de forma binária, onde há *[0, 1, 1]* ou *['Branca', 'Preta ou Parda', 'Preta ou Parda']*. Agora, o modelo será testado na prática, fazendo previsões no DataFrame *'X_new'*, que não contém essa coluna:
 
 ```model.predict(X_new)```
 
-Obteve-se como resultado uma matriz ([1, 1, 1]), observando-se que o modelo apresentou um erro no primeiro resultado, mas acertou nas duas previsões subsequentes. Como medida corretiva, uma abordagem alternativa será adotada na busca de uma previsão mais precisa.
+Obteve-se como resultado uma matriz *([1, 1, 1])*, observando-se que o modelo apresentou um erro no primeiro resultado, mas acertou nas duas previsões subsequentes. Como medida corretiva, uma abordagem alternativa será adotada na busca de uma previsão mais precisa.
 
 ### Regressão Logística 
 
@@ -188,11 +188,11 @@ Assim como na árvore de decião aqui também foram testados 30% dos dados, pelo
 
 A análise dos resultados revelou melhorias substanciais tanto no reporte completo quanto no reporte de teste. Este aprimoramento representa um desenvolvimento significativo na capacidade do modelo de regressão logística em prever com precisão a raça dos indivíduos com base nos indicadores socioeconômicos e de desenvolvimento humano. 
 
-Neste cenário, faremos uso do DataFrame "X_new", previamente mencionado, no qual não inclui uma coluna de raça. O objetivo é utilizar um modelo de regressão logística para fazer previsões com base nesse DataFrame em relação aos resultados contidos em outro DataFrame que incorpora a coluna de raça. Esta última coluna de raça é representada pelos valores [0, 1, 1] ou ['Branca', 'Preta ou Parda', 'Preta ou Parda'] para as linhas de índice [6785, 7586, 2195], conforme discutido anteriormente.
+Neste cenário, faremos uso do DataFrame *"X_new"*, previamente mencionado, no qual não inclui uma coluna de raça. O objetivo é utilizar um modelo de regressão logística para fazer previsões com base nesse DataFrame em relação aos resultados contidos em outro DataFrame que incorpora a coluna de raça. Esta última coluna de raça é representada pelos valores *[0, 1, 1]* ou *['Branca', 'Preta ou Parda', 'Preta ou Parda']* para as linhas de índices igual a *[6785, 7586, 2195]*, conforme discutido anteriormente.
 
 ```model.predict(X_new)```
 
-Desta vez, com um modelo mais apurado tem-se um resultado que é uma matriz([0, 1, 1]) que é exatamente o resultado esperado e equivale a ['Branca', 'Preta ou Parda', 'Preta ou Parda'] como era esperado.
+Desta vez, com um modelo mais apurado tem-se um resultado que é uma matriz(*[0, 1, 1]*) que é exatamente o resultado esperado e equivale a *['Branca', 'Preta ou Parda', 'Preta ou Parda']* como era esperado.
 
 No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
 
