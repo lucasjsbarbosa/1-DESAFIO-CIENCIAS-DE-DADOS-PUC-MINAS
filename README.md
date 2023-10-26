@@ -195,7 +195,7 @@ Desta vez, com um modelo mais apurado tem-se um resultado que é uma matriz(*[0,
 
 No contexto da análise, é importante destacar que foram explorados diversos solvers no modelo de regressão logística. Dentre as opções consideradas, como o "newton-cg", "lbfgs", "liblinear" e "sag", o solver "newton-cg" emergiu como o mais eficaz e apropriado para o problema em questão. Este resultado não apenas ressalta a necessidade de avaliar diferentes solvers, mas também destaca a relevância da escolha do "newton-cg" como o mais adequado para otimizar a performance do modelo.
 
-### Análise Crítica
+## Análise Crítica
 
 A desigualdade no Brasil é um fenômeno profundamente enraizado em sua história e estrutura social. É evidente que, historicamente, a raça tem desempenhado um papel crucial na determinação das oportunidades e na distribuição de recursos no país. A desigualdade racial no Brasil é notória, e essa disparidade se manifesta em diversas esferas, desde o acesso desigual à educação e saúde até a representatividade no mercado de trabalho e na renda. Essa desigualdade está intrinsecamente ligada à raça, com a população negra e parda enfrentando desvantagens sistemáticas em relação à população branca.
 
