@@ -11,7 +11,7 @@ Na pesquisa conduzida, a linguagem Python foi empregada como a principal ferrame
 - 5 - Transformação dos dados, como codificação de variáveis categóricas.
 - 6 - Análise exploratória de dados (EDA) para identificar padrões e relações.
 - 7 - Normalização dos dados para escalas comparáveis.
-- 8 - Divisão dos dados para treinamento (30%) e teste (70%).
+- 8 - Divisão dos dados para teste (30%) e treinamento (70%).
 - 9 - Construção de um modelo de Árvore de Decisão.
 - 10 - Construção de um modelo de Regressão Logística.
 - 11 - Avaliação do desempenho dos modelos.
@@ -141,9 +141,9 @@ Torna se necessário a verificação e consolidação na prática do modelo, aba
 | macro avg    | 0.70      | 0.70   | 0.70     | 22260   |
 | weighted avg | 0.70      | 0.70   | 0.70     | 22260   |
 
-É fundamental notar que, com o intuito de garantir a validade dos resultados, apenas 30% dos dados totais foram empregados no processo de treinamento do modelo. Essa prática visa a assegurar que uma porção substancial dos dados seja reservada para a fase de teste e validação, permitindo uma avaliação mais precisa da eficácia da árvore de decisão. A divisão de dados em treinamento e teste é uma estratégia comum no campo de aprendizado de máquina, que ajuda a prevenir possíveis vieses e superestimações do desempenho do modelo. 
+É fundamental notar que, com o intuito de garantir a validade dos resultados, 70% dados totais foram empregados no processo de treinamento do modelo. Essa prática visa a assegurar que uma porção substancial dos dados seja reservada para a fase de teste e validação, permitindo uma avaliação mais precisa da eficácia da árvore de decisão. A divisão de dados em treinamento e teste é uma estratégia comum no campo de aprendizado de máquina, que ajuda a prevenir possíveis vieses e superestimações do desempenho do modelo. 
 
-É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, mesmo com apenas 30% dos dados utilizados para treinamento, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão.
+É notável que os resultados alcançados nas métricas, incluindo precisão, acurácia e outras, não deixaram a desejar. Isso demonstra que o modelo de árvore de decisão, conseguiu realizar previsões com um grau satisfatório de acerto. Esses resultados são encorajadores e destacam a eficácia da árvore de decisão na análise dos dados em questão.
 
 Para uma visualização prática do modelo, foi criada um DataFrame chamado *'X_new'* no qual se encontram 3 linhas de índices igual a *[6785, 7586, 2195]*, cada uma com informações detalhadas em colunas sobre incidência, qtd_pes_E1, qtd_pes_E2 e outras variáveis relevantes. Nota-se que as informações contidas nessas colunas não fazem referência à raça.
 
