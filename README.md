@@ -16,8 +16,8 @@ Na pesquisa conduzida, a linguagem Python foi empregada como a principal ferrame
 - 10 - Construção de um modelo de Regressão Logística.
 - 11 - Avaliação do desempenho dos modelos.
 
-## Análise Generalizada do Índice de Pobreza Multidmensional (IPM) no Brasil
-Afim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
+## Análise Generalizada do Índice de Pobreza Multidimensional (IPM) no Brasil
+A fim de fazer uma análise generalizada do IPM deve-se levar em consideração os indicadores que são usados para que o cálculo do índice seja feito: 
 
 ### Dimensão: Educação
 
@@ -46,7 +46,7 @@ Afim de fazer uma análise generalizada do IPM deve-se levar em consideração o
 - (P4) Renda Domiciliar: Domicílio com renda domiciliar per capita inferior a linha de pobreza – U$$5,50 por dia ou R$93,27 por mês (Peso: 6,25)
 
 
-Com a finalidade de conduzir a análise de maneira gradual e sistemática, é inicialmente aplicada uma abordagem centrada na construção de um histograma que apresenta a frequência de repetiação de cada IPM levando em conta os 5565 municípios do país que estão englabados nos dados em questão. Essa abordagem se revela relevante no contexto da pesquisa, visto que a utilização de um histograma desempenha um papel fundamental no processo de análise exploratória de dados, permitindo a visualização e interpretação da distribuição de variáveis, fatores críticos para a compreensão aprofundada dos padrões e tendências subjacentes nos conjuntos de dados em estudo.
+Com a finalidade de conduzir a análise de maneira gradual e sistemática, é inicialmente aplicada uma abordagem centrada na construção de um histograma que apresenta a frequência de repetição de cada IPM levando em conta os 5565 municípios do país que estão englabados nos dados em questão. Essa abordagem se revela relevante no contexto da pesquisa, visto que a utilização de um histograma desempenha um papel fundamental no processo de análise exploratória de dados, permitindo a visualização e interpretação da distribuição de variáveis, fatores críticos para a compreensão aprofundada dos padrões e tendências subjacentes nos conjuntos de dados em estudo.
 
 <div align="center">
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/46fef24b-01ea-48f7-964b-a5c036cf2228" alt="Descrição da Imagem">
@@ -77,7 +77,7 @@ Neste ponto da análise, já podemos observar evidências sólidas das desiguald
   <img src="https://github.com/lucasjsbarbosa/1-DESAFIO-DE-CIENCIA-DE-DADOS-PUC-MINAS/assets/106505340/e84f131b-35f6-4c39-b464-4f65bd6771ef" alt="Descrição da Imagem">
 </div>
 
-Como  são muitos dados em uma único gráfico, ressalta-se a importância de coloca-los em uma tabela para melhor visão e compreensão. Nota se que estão em notação decimal e representam a porcentagem total de pessoas no devido indicador em relação ao grupo:
+Como  são muitos dados em um único gráfico, ressalta-se a importância de coloca-los em uma tabela para melhor visão e compreensão. Nota se que estão em notação decimal e representam a porcentagem total de pessoas no devido indicador em relação ao grupo:
 
 | Grupo               | qtd_pes_E1 | qtd_pes_E2 | qtd_pes_E3 | qtd_pes_S1 | qtd_pes_S2 | qtd_pes_S3 | qtd_pes_S4 | qtd_pes_T1 | qtd_pes_T2 | qtd_pes_T3 | qtd_pes_P1 | qtd_pes_P2 | qtd_pes_P3 | qtd_pes_P4 |
 |---------------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|
@@ -163,7 +163,7 @@ No contexto em questão, a regressão logística desempenha um papel crucial ao 
 
 Ao capacitar a análise das variáveis independentes e sua relação com a raça, a regressão logística oferece insights valiosos para abordar desigualdades sociais e econômicas, promovendo uma visão mais abrangente da dinâmica dessas disparidades e proporcionando subsídios para medidas que buscam a equidade e justiça.
 
-Assim como na árvore de decião aqui também foram testados 30% dos dados, pelos mesmo motivos e assim ficaram os reportes: 
+Assim como na árvore de decisão aqui também foram testados 30% dos dados, pelos mesmo motivos e assim ficaram os reportes: 
 
 #### Reporte de Teste
 
